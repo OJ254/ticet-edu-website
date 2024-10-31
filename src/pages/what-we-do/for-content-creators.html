@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
+    <script src="/src/script.js" defer></script>
+
+    <title>ticet edu - What we do</title>
+
+    <link rel="icon" type="image/svg" href="/public/favicon.ico" />
+
+    <script
+      src="/src/components/navbar.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <script
+      src="/src/components/footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <!-- start of header -->
+    <div>
+      <nav-bar></nav-bar>
+    </div>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <div class="flex flex-col items-center w-full mt-20">
+      <div class="flex justify-center w-full">
+        <div class="max-w-8xl flex gap-4 flex-col py-10 px-4">
+          <div class="flex gap-4 flex-col lg:flex-row w-full py-8 md:py-12">
+            <div class="w-full lg:min-w-72 xl:min-w-80 2xl:min-w-96">
+              <h5 class="w-full">What we do</h5>
+              <h4
+                class="text-secondary-yellow-500 dark:text-secondary-yellow-500"
+              >
+                For Content Creators
+              </h4>
+            </div>
+
+            <p class="text-justify small">
+              Ticet Edu offers a compelling value proposition to content
+              creators, including industry professionals, teachers, and
+              lecturers, by providing a dynamic platform that enhances teaching,
+              networking, and monetization opportunities. With collaborative
+              tools, creators can connect with peers, collaborate on projects,
+              and learn from other educators and professionals, enriching their
+              teaching practices and expanding their influence. Our social tools
+              enable content creators to build their professional reputation,
+              engage with a global audience, and establish themselves as thought
+              leaders. By participating in discussions and sharing content,
+              educators can network, grow their following, and open doors to new
+              career opportunities. Ticet's edtech tools offer access to a vast
+              community library of resources and advanced features like machine
+              learning (ML) and artificial intelligence (AI) for content
+              development. Creators can also monetize their expertise through
+              paid libraries or public libraries, benefiting from our
+              revenue-sharing model.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="body w-full flex justify-center h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] xl:h-[700px]"
+      >
+        <div class="relative w-full max-w-8xl flex items-center justify-end">
+          <div
+            class="absolute left-0 bg-local w-full h-full max-w-7xl bg-cover bg-center"
+            style="
+              background-image: url(/public/assets/what_we_do_content-creators-2.jpg);
+            "
+          ></div>
+
+          <div
+            class="absolute right-0 max-w-lg surface surface-hover flex flex-col gap-4 rounded-md p-8 mx-4"
+          >
+            <title
+              class="sub-title flex font-roboto font-extralight text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:underline hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer"
+            >
+              Kemo enim ipsam voluptatem quia voluptas sit aspernatur aut.
+            </title>
+            <p class="p-small">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <button class="primary-button pill-button max-w-max self-end">
+              Learn More
+              <svg
+                class="ml-2"
+                width="13"
+                height="12"
+                viewBox="0 0 13 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full flex justify-center mt-20">
+        <div
+          class="rounded-lg surface grid lg:grid-cols-2 gap-8 sm:gap-10 w-full max-w-8xl"
+        >
+          <div
+            class="lg:order-last h-96 lg:h-auto bg-center bg-cover rounded-lg"
+            style="
+              background-image: url(/public/assets/what_we_do_content-creators-3.jpg);
+            "
+          ></div>
+
+          <div class="flex flex-col justify-center w-full p-4 lg:p-8 xl:p-12">
+            <p class="p-small text-justify mb-4">
+              <span
+                class="text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+              >
+                <a href="#">ticet edu</a> </span
+              >is a powerful LXP that offers unique benefits to content
+              creators, including industry professionals, teachers, and
+              lecturers, through its comprehensive suite of edtech,
+              collaborative, and social tools. By providing a space for creators
+              to develop, share, and monetize their content, Ticet empowers
+              educators to expand their reach and impact.
+            </p>
+            <h6 class="mb-2">EdTech Tools</h6>
+            <p class="p-small text-justify mb-4">
+              Ticet's edtech tools provide content creators with access to a
+              vast community library filled with resources from around the
+              world. This library serves as a valuable reference, enabling
+              educators to enhance their teaching materials and stay updated
+              with the latest trends and best practices in education. The
+              platform also supports the use of machine learning (ML) and
+              artificial intelligence (AI) tools, helping creators develop more
+              effective and personalized content.
+            </p>
+            <h6 class="mb-2">Social Tools</h6>
+            <p class="p-small text-justify mb-4">
+              Our social tools offer content creators a robust platform to build
+              their professional reputation and engage with their audience. By
+              participating in discussions, sharing their content, and
+              interacting with learners, educators can establish themselves as
+              thought leaders in their fields. The platform’s social features
+              also open up networking opportunities with other professionals,
+              leading to potential career advancements and collaborations.
+              Through active engagement and online activity, content creators
+              can attract more followers, enhance their visibility, and grow
+              their professional network.
+            </p>
+            <h6 class="mb-2">Collaborative Tools</h6>
+            <p class="p-small text-justify mb-4">
+              Ticet’s collaborative tools enable content creators to network and
+              work closely with other educators and industry professionals.
+              Through virtual workshops, group projects, and discussion forums,
+              creators can share insights, collaborate on curriculum
+              development, and learn from each other’s experiences. This
+              collaboration not only enhances teaching practices but also leads
+              to innovative approaches to content delivery. Additionally,
+              creators can partner with stakeholders within the learning
+              community to improve their teaching methods, benefiting from
+              diverse perspectives and expertise.
+            </p>
+            <p class="p-small text-justify mb-4">
+              Moreover, Ticet offers multiple monetization options for creators,
+              including active and passive income opportunities. Educators can
+              create paid libraries that learners subscribe to or contribute to
+              public libraries, qualifying for Ticet’s revenue-sharing model.
+              This not only provides a platform to distribute content to a
+              targeted audience but also creates sustainable income streams,
+              rewarding creators for their expertise and contributions.
+            </p>
+            <p class="p-small text-justify mb-4">
+              Through these innovative tools and features, Ticet Edu enhances
+              the experience for content creators, providing them with the
+              resources and opportunities needed to excel and make a lasting
+              impact in the education sector.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex gap-4 md:gap-6 lg:gap-8 items-center justify-center w-full max-w-8xl mt-20 px-4"
+      >
+        <button class="prevBtn primary-button pill-button p-2">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 19l-7-7 7-7"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <div class="scrollCarousel flex gap-8 w-full overflow-x-auto">
+          <div class="w-80 xl:w-96 flex-shrink-0">
+            <div class="group surface surface-hover rounded">
+              <div
+                class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                style="background-image: url(/public/assets/what_we_do-1.jpg)"
+              ></div>
+              <div class="flex flex-col gap-4 p-4">
+                <h6
+                  class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                >
+                  What is a Learning Experience Platform (LXP), and How Can It
+                  Transform Education?
+                </h6>
+                <p class="p-small line-clamp-5">
+                  A LXP is a digital platform designed to provide an enriching
+                  educational experience tailored to individual needs. Unlike
+                  traditional Learning Management Systems (LMS), which often
+                  focus on delivering course content in a structured way (think
+                  quizzes, grades, and rigid schedules), LXPs are all about the
+                  learner. They prioritize personalized learning paths,
+                  interactive content, and social engagement. It’s like trading
+                  in your old flip phone for the latest smartphone—it’s a game
+                  changer!
+                </p>
+                <button class="primary-button pill-button max-w-max self-end">
+                  Learn More
+                  <svg
+                    class="ml-2"
+                    width="13"
+                    height="12"
+                    viewBox="0 0 13 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-80 xl:w-96 flex-shrink-0">
+            <div class="group surface surface-hover rounded">
+              <div
+                class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                style="
+                  background-image: url(/public/assets/what_we_do-blog-5.jpg);
+                "
+              ></div>
+              <div class="flex flex-col gap-4 p-4">
+                <h6
+                  class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                >
+                  The Role of Social Learning in Modern Education: Why It
+                  Matters for Student Success
+                </h6>
+                <p class="p-small line-clamp-5">
+                  It’s the process of learning through interactions with others.
+                  It involves collaborating, sharing ideas, and discussing
+                  topics with your peers. Whether you’re brainstorming on a
+                  group project, giving each other feedback, or just chatting
+                  about what you learned in class, social learning helps deepen
+                  your understanding and retention of the material.
+                </p>
+                <button class="primary-button pill-button max-w-max self-end">
+                  Learn More
+                  <svg
+                    class="ml-2"
+                    width="13"
+                    height="12"
+                    viewBox="0 0 13 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-80 xl:w-96 flex-shrink-0">
+            <div class="group surface surface-hover rounded">
+              <div
+                class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                style="
+                  background-image: url(/public/assets/what_we_do-blog-1.jpg);
+                "
+              ></div>
+              <div class="flex flex-col gap-4 p-4">
+                <h6
+                  class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                >
+                  Collaborative Learning is Key to Enhancing Student Engagement
+                  and Improving Learning Outcomes
+                </h6>
+                <p class="p-small line-clamp-5">
+                  Learning is more effective (and fun!) when you do it with
+                  others. Collaborative learning keeps you engaged, helps you
+                  think deeper, and boosts those grades. So next time, grab a
+                  classmate (or three), start a study group, or log in to Ticet
+                  Edu where you can connect with other learners. Together,
+                  you’ll conquer any subject—guaranteed.
+                </p>
+                <button class="primary-button pill-button max-w-max self-end">
+                  Learn More
+                  <svg
+                    class="ml-2"
+                    width="13"
+                    height="12"
+                    viewBox="0 0 13 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-80 xl:w-96 flex-shrink-0">
+            <div class="group surface surface-hover rounded">
+              <div
+                class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                style="
+                  background-image: url(/public/assets/what_we_do-blog-3.jpg);
+                "
+              ></div>
+              <div class="flex flex-col gap-4 p-4">
+                <h6
+                  class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                >
+                  Building a Community of Learners: The Power of Community
+                  Learning in Education
+                </h6>
+                <p class="p-small line-clamp-5">
+                  Community learning is all about bringing people together to
+                  share knowledge, support one another, and grow as learners.
+                  Imagine a space where students can collaborate, ask questions,
+                  and exchange ideas—sounds pretty awesome, right? That’s
+                  exactly what community learning is all about! It fosters a
+                  sense of belonging, allowing you to connect with fellow
+                  learners who share similar interests and goals.
+                </p>
+                <button class="primary-button pill-button max-w-max self-end">
+                  Learn More
+                  <svg
+                    class="ml-2"
+                    width="13"
+                    height="12"
+                    viewBox="0 0 13 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="nextBtn primary-button pill-button p-2">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 5l7 7-7 7"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="w-full surface py-20 mt-20">
+        <div class="mx-auto max-w-8xl px-6 lg:px-8">
+          <div class="mx-auto max-w-4xl sm:text-center">
+            <h4>Pricing</h4>
+            <p class="mt-6 text-base">
+              Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
+              quasi iusto modi velit ut non voluptas in. Explicabo id ut
+              laborum.
+            </p>
+          </div>
+          <div class="w-full mt-10 grid grid-cols-3 items-center gap-x-8">
+            <div
+              class="w-full col-span-3 xl:col-span-1 flex flex-col md:flex-row xl:flex-col rounded-xl ring-1 ring-gray-200 dark:ring-gray-600"
+            >
+              <div class="p-8 sm:p-10 lg:flex-auto">
+                <h5>Free</h5>
+                <p class="mt-6 text-base">
+                  Lorem ipsum dolor sit amet consect etur adipisicing elit.
+                  Itaque amet indis perferendis blanditiis repellendus etur
+                  quidem assumenda.
+                </p>
+                <div class="mt-10 flex items-center gap-x-4">
+                  <h6 class="flex-none text-sm">What’s included</h6>
+                  <div class="h-px flex-auto bg-gray-100"></div>
+                </div>
+                <ul
+                  role="list"
+                  class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-app-colors-p-smaller dark:text-app-colors-p-smaller-d sm:grid-cols-2"
+                >
+                  <li class="flex gap-x-2">
+                    <svg
+                      class="h-6 w-5 flex-none text-primary-main-700"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Private forum access
+                  </li>
+                  <li class="flex gap-x-2">
+                    <svg
+                      class="h-6 w-5 flex-none text-primary-main-700"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Member resources
+                  </li>
+                  <li class="flex gap-x-2">
+                    <svg
+                      class="h-6 w-5 flex-none text-primary-main-700"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Entry to annual conference
+                  </li>
+                  <li class="flex gap-x-2">
+                    <svg
+                      class="h-6 w-5 flex-none text-primary-main-700"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    Official member t-shirt
+                  </li>
+                </ul>
+              </div>
+              <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:min-w-72">
+                <div
+                  class="body lg:w-full rounded-2xl py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16"
+                >
+                  <div class="mx-auto max-w-xs px-8">
+                    <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                      <span
+                        class="text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-100"
+                        >$0</span
+                      >
+                      <span
+                        class="text-sm font-semibold leading-6 tracking-wide text-gray-600"
+                        >USD</span
+                      >
+                    </p>
+                    <a href="#" class="primary-button pill-button mt-10 w-full"
+                      >Get access</a
+                    >
+                    <p class="mt-6 text-xs leading-5 text-gray-600">
+                      Invoices and receipts available for easy company
+                      reimbursement
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-span-3 xl:col-span-2 grid grid-cols-2 gap-x-8 mt-8 xl:mt-0"
+            >
+              <div
+                class="col-span-2 lg:col-span-1 flex flex-col md:flex-row lg:flex-col rounded-xl ring-1 ring-gray-200 dark:ring-gray-600"
+              >
+                <div class="p-8 sm:p-10 lg:flex-auto">
+                  <h5>Tri-Annually</h5>
+                  <p class="mt-6 text-base">
+                    Lorem ipsum dolor sit amet consect etur adipisicing elit.
+                    Itaque amet indis perferendis blanditiis repellendus etur
+                    quidem assumenda.
+                  </p>
+                  <div class="mt-10 flex items-center gap-x-4">
+                    <h6 class="flex-none text-sm">What’s included</h6>
+                    <div class="h-px flex-auto bg-gray-100"></div>
+                  </div>
+                  <ul
+                    role="list"
+                    class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-app-colors-p-smaller dark:text-app-colors-p-smaller-d sm:grid-cols-2"
+                  >
+                    <li class="flex gap-x-2">
+                      <svg
+                        class="h-6 w-5 flex-none text-primary-main-700"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Private forum access
+                    </li>
+                    <li class="flex gap-x-2">
+                      <svg
+                        class="h-6 w-5 flex-none text-primary-main-700"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Member resources
+                    </li>
+                    <li class="flex gap-x-2">
+                      <svg
+                        class="h-6 w-5 flex-none text-primary-main-700"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Entry to annual conference
+                    </li>
+                    <li class="flex gap-x-2">
+                      <svg
+                        class="h-6 w-5 flex-none text-primary-main-700"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Official member t-shirt
+                    </li>
+                  </ul>
+                </div>
+                <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:min-w-72">
+                  <div
+                    class="body lg:w-full rounded-xl py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16"
+                  >
+                    <div class="mx-auto max-w-xs px-8">
+                      <p
+                        class="mt-6 flex items-baseline justify-center gap-x-2"
+                      >
+                        <span
+                          class="text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-100"
+                          >$6</span
+                        >
+                        <span
+                          class="text-sm font-semibold leading-6 tracking-wide text-gray-600"
+                          >USD</span
+                        >
+                      </p>
+                      <a
+                        href="#"
+                        class="primary-button pill-button mt-10 w-full"
+                        >Get access</a
+                      >
+                      <p class="mt-6 text-xs leading-5 text-gray-600">
+                        Invoices and receipts available for easy company
+                        reimbursement
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-span-2 lg:col-span-1 flex flex-col md:flex-row lg:flex-col rounded-xl ring-1 ring-gray-200 dark:ring-gray-600"
+              >
+                <div class="p-8 sm:p-10 lg:flex-auto">
+                  <h5>Annually</h5>
+                  <p class="mt-6 text-base">
+                    Lorem ipsum dolor sit amet consect etur adipisicing elit.
+                    Itaque amet indis perferendis blanditiis repellendus etur
+                    quidem assumenda.
+                  </p>
+                  <div class="mt-10 flex items-center gap-x-4">
+                    <h6 class="flex-none text-sm">What’s included</h6>
+                    <div class="h-px flex-auto bg-gray-100"></div>
+                  </div>
+                  <ul
+                    role="list"
+                    class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-app-colors-p-smaller dark:text-app-colors-p-smaller-d sm:grid-cols-2"
+                  >
+                    <li class="flex gap-x-2">
+                      <svg
+                        class="h-6 w-5 flex-none text-primary-main-700"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Private forum access
+                    </li>
+                    <li class="flex gap-x-2">
+                      <svg
+                        class="h-6 w-5 flex-none text-primary-main-700"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Member resources
+                    </li>
+                    <li class="flex gap-x-2">
+                      <svg
+                        class="h-6 w-5 flex-none text-primary-main-700"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Entry to annual conference
+                    </li>
+                    <li class="flex gap-x-2">
+                      <svg
+                        class="h-6 w-5 flex-none text-primary-main-700"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                      Official member t-shirt
+                    </li>
+                  </ul>
+                </div>
+                <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:min-w-72">
+                  <div
+                    class="body lg:w-full rounded-xl py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16"
+                  >
+                    <div class="mx-auto max-w-xs px-8">
+                      <p
+                        class="mt-6 flex items-baseline justify-center gap-x-2"
+                      >
+                        <span
+                          class="text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-100"
+                          >$15</span
+                        >
+                        <span
+                          class="text-sm font-semibold leading-6 tracking-wide text-gray-600"
+                          >USD</span
+                        >
+                      </p>
+                      <a
+                        href="#"
+                        class="primary-button pill-button mt-10 w-full"
+                        >Get access</a
+                      >
+                      <p class="mt-6 text-xs leading-5 text-gray-600">
+                        Invoices and receipts available for easy company
+                        reimbursement
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <div>
+      <my-footer></my-footer>
+    </div>
+    <!-- end of footer -->
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const prevBtn = document.querySelector(".prevBtn");
+      const nextBtn = document.querySelector(".nextBtn");
+      const scrollCarousel = document.querySelector(".scrollCarousel");
+
+      function setupCarouselButtons() {
+        if (window.innerWidth >= 1024) {
+          // Show buttons and add event listeners
+          prevBtn.style.display = "block";
+          nextBtn.style.display = "block";
+
+          prevBtn.addEventListener("click", scrollLeft);
+          nextBtn.addEventListener("click", scrollRight);
+        } else {
+          // Hide buttons and remove event listeners for smaller screens
+          prevBtn.style.display = "none";
+          nextBtn.style.display = "none";
+
+          prevBtn.removeEventListener("click", scrollLeft);
+          nextBtn.removeEventListener("click", scrollRight);
+        }
+      }
+
+      // Scroll functions
+      function scrollLeft() {
+        scrollCarousel.scrollBy({
+          left: -300,
+          behavior: "smooth",
+        });
+      }
+
+      function scrollRight() {
+        scrollCarousel.scrollBy({
+          left: 300,
+          behavior: "smooth",
+        });
+      }
+
+      // Initial setup based on current screen size
+      setupCarouselButtons();
+
+      // Re-check screen size and button visibility on window resize
+      window.addEventListener("resize", setupCarouselButtons);
+    });
+  </script>
+</html>
