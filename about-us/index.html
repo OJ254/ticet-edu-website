@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/svg" href="/public/favicon.ico" />
+
+    <script src="./src/script.js" defer></script>
+
+    <script
+      src="./src/components/navbar.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="./src/components/footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <title>Ticet EDU Website</title>
+  </head>
+  <body
+    class="flex flex-col min-h-screen min-w-screen background bg-primary-900 dark:bg-primary-950 bg-fixed bg-cover bg-center bg-blend-overlay"
+  >
+    <!-- Header -->
+    <div>
+      <nav-bar></nav-bar>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex justify-center items-center mt-20 min-h-[95vh]">
+      <div
+        class="flex lg:items-center justify-center gap-16 flex-grow w-full max-w-8xl pt-10"
+      >
+        <div class="flex flex-col gap-4 w-full mx-4 xl:mx-0">
+          <h5
+            class="text-secondary-yellow-500 dark:text-secondary-yellow-500 uppercase"
+          >
+            collaborative learning
+          </h5>
+          <div class="flex gap-4 flex-col lg:flex-row w-full">
+            <title
+              class="flex w-full max-w-2xl font-roboto font-extralight text-white"
+            >
+              Empowering Education through Innovation and Community Learning.
+            </title>
+            <div class="flex flex-col gap-4 w-full">
+              <p
+                class="text-base md:text-lg xl:text-xl text-white leading-10 tracking-wide"
+              >
+                Welcome to Ticet EDU, a learning experince platfrom where
+                education meets innovation. Our platform is designed to
+                revolutionize the learning experience by fostering a
+                collaborative and engaging learning environment that connects
+                stakeholders in the education industry. Through cutting-edge
+                technology, interactive tools, and a community-driven approach,
+                Ticet EDU enhances the learning experience, making education
+                more accessible, personalized, and impactful for everyone. Join
+                us to explore a diverse range of courses, interactive tools, and
+                resources tailored to enhance your scholarly journey.
+              </p>
+              <button
+                class="px-6 pill-button max-w-max bg-app-colors-surface text-app-colors-heading hover:bg-primary-main-700 hover:text-app-colors-heading-d ease-in-out transition duration-500"
+                onclick="window.location.href='https://infobrix.co.ke/'"
+              >
+                Start free trial
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div>
+      <my-footer></my-footer>
+    </div>
+  </body>
+</html>

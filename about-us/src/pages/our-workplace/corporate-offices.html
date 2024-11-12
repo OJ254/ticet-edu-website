@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="icon" type="image/svg" href="../../../public/favicon.ico" />
+
+    <script src="../../script.js" defer></script>
+
+    <script
+      src="../../components/navbar.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="../../components/footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <style>
+      #sticky-menu {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+      }
+    </style>
+
+    <title>Ticet EDU - Our Workplace</title>
+  </head>
+
+  <body>
+    <!-- start of header -->
+    <div>
+      <nav-bar></nav-bar>
+    </div>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <div class="flex flex-col items-center w-full mt-20 my-8">
+      <div class="flex justify-center w-full">
+        <div class="max-w-8xl flex gap-4 flex-col py-10 px-4">
+          <div class="flex gap-4 flex-col lg:flex-row w-full py-8 md:py-12">
+            <div class="lg:min-w-72 xl:min-w-80 2xl:min-w-96">
+              <h5 class="w-full">Our Workplace</h5>
+              <h4
+                class="text-secondary-yellow-500 dark:text-secondary-yellow-500"
+              >
+                Corporate Offices
+              </h4>
+            </div>
+
+            <div class="w-full">
+              <img src="/public/assets/frame-4.jpg" alt="" class="w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex w-full max-w-8xl justify-center px-4">
+        <div class="w-full grid md:grid-cols-2">
+          <div
+            class="flex bg-cover bg-center -order-2"
+            style="
+              background-image: url(/public/assets/frame-5.webp);
+              height: 100%;
+              aspect-ratio: 1;
+            "
+          ></div>
+
+          <div
+            class="-order-1 surface surface-hover flex flex-col gap-8 justify-center items-center rounded-sm p-8"
+          >
+            <div class="w-full max-w-max flex flex-col gap-8">
+              <div>
+                <h5
+                  class="w-full max-w-lg uppercase text-secondary-yellow-600 dark:text-secondary-yellow-600 mb-2"
+                >
+                  Get in touch
+                </h5>
+                <p class="p-small mb-2">
+                  Nairobi Garage Spring Valley <br />
+                  3rd Floor, The Promenade<br />
+                  General Mathenge Road // Parklands<br />
+                  Nairobi, Kenya
+                </p>
+                <p class="p-small">
+                  T: +254 700 000000<br />
+                  E: info@ticet.edu<br />
+                </p>
+              </div>
+              <div>
+                <h5
+                  class="w-full max-w-lg uppercase text-secondary-yellow-600 dark:text-secondary-yellow-600 mb-4"
+                >
+                  Connect
+                </h5>
+                <div class="flex gap-4">
+                  <a href="#"
+                    ><svg
+                      class="cursor-pointer"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0379 4.78727C14.0441 4.92807 14.0441 5.06247 14.0441 5.20327C14.0503 9.47208 10.914 14.4001 5.17846 14.4001C3.48682 14.4001 1.82606 13.8945 0.399902 12.9473C0.646856 12.9793 0.89381 12.9921 1.14076 12.9921C2.54223 12.9921 3.90664 12.5057 5.01176 11.6033C3.67821 11.5777 2.50518 10.6753 2.09771 9.35688C2.56692 9.45288 3.04848 9.43368 3.50535 9.29928C2.05449 9.00488 1.01111 7.68008 1.00494 6.13767C1.00494 6.12487 1.00494 6.11207 1.00494 6.09927C1.43711 6.34887 1.92484 6.48967 2.41875 6.50247C1.05433 5.55527 0.628335 3.66726 1.45563 2.18886C3.04231 4.21126 5.37602 5.43367 7.8826 5.56807C7.62947 4.44807 7.97521 3.27046 8.78398 2.47686C10.0373 1.25446 12.0129 1.31846 13.1983 2.61766C13.8959 2.47686 14.5689 2.20806 15.1801 1.83046C14.9455 2.57926 14.4577 3.21286 13.8095 3.61606C14.4269 3.53926 15.0319 3.36646 15.5999 3.11046C15.1801 3.76326 14.6491 4.32647 14.0379 4.78727Z"
+                        fill="#1DA1F2"
+                      /></svg
+                  ></a>
+                  <a href="#"
+                    ><svg
+                      class="cursor-pointer"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4758 8.88534L11.8904 6.15524H9.2968V4.38437C9.2968 3.63728 9.65845 2.90864 10.8201 2.90864H12V0.584368C12 0.584368 10.9297 0.399902 9.90685 0.399902C7.76986 0.399902 6.37443 1.70777 6.37443 4.07447V6.15524H4V8.88534H6.37443V15.4855C6.85114 15.5612 7.33881 15.5999 7.83562 15.5999C8.33242 15.5999 8.82009 15.5612 9.2968 15.4855V8.88534H11.4758Z"
+                        fill="#1877F2"
+                      /></svg
+                  ></a>
+                  <a href="#"
+                    ><svg
+                      class="cursor-pointer"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_53130_7109)">
+                        <path
+                          d="M7.9967 0C3.57384 0 0 3.58042 0 7.9967C0 11.3863 2.10613 14.2822 5.08104 15.4471C5.00864 14.8153 4.94941 13.8412 5.10736 13.1501C5.25216 12.5249 6.04195 9.17483 6.04195 9.17483C6.04195 9.17483 5.80502 8.69437 5.80502 7.99013C5.80502 6.87782 6.45002 6.04854 7.25298 6.04854C7.93747 6.04854 8.26656 6.5619 8.26656 7.174C8.26656 7.8585 7.83216 8.88523 7.60181 9.83957C7.41094 10.636 8.0033 11.2875 8.78651 11.2875C10.2081 11.2875 11.3007 9.78691 11.3007 7.62814C11.3007 5.71288 9.92514 4.3768 7.95722 4.3768C5.67997 4.3768 4.34389 6.08144 4.34389 7.84533C4.34389 8.52982 4.60715 9.26696 4.93624 9.66845C5.00206 9.74742 5.00864 9.81982 4.9889 9.8988C4.92966 10.1489 4.79144 10.6952 4.76512 10.8071C4.73221 10.9519 4.64664 10.9848 4.49526 10.9124C3.50802 10.4385 2.88934 8.97738 2.88934 7.80584C2.88934 5.28507 4.71904 2.96832 8.17442 2.96832C10.9453 2.96832 13.1041 4.94282 13.1041 7.58864C13.1041 10.3464 11.3665 12.5644 8.95763 12.5644C8.14808 12.5644 7.38461 12.1432 7.12794 11.6429C7.12794 11.6429 6.72645 13.1699 6.62773 13.545C6.45002 14.2427 5.96298 15.1115 5.63389 15.6446C6.38421 15.8749 7.174 16 8.0033 16C12.4196 16 16 12.4196 16 8.0033C15.9934 3.58042 12.413 0 7.9967 0Z"
+                          fill="#E60023"
+                        />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_53130_7109">
+                          <rect width="16" height="16" rx="6" fill="white" />
+                        </clippath>
+                      </defs></svg
+                  ></a>
+                  <a href="#"
+                    ><svg
+                      class="cursor-pointer"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.6704 4.15278C15.4859 3.46744 14.9456 2.92708 14.2602 2.74257C13.0082 2.3999 7.99997 2.3999 7.99997 2.3999C7.99997 2.3999 2.99175 2.3999 1.7397 2.72939C1.06754 2.9139 0.514001 3.46744 0.329488 4.15278C0 5.40483 0 8.0012 0 8.0012C0 8.0012 0 10.6107 0.329488 11.8496C0.514001 12.5349 1.05436 13.0753 1.7397 13.2598C3.00493 13.6025 7.99997 13.6025 7.99997 13.6025C7.99997 13.6025 13.0082 13.6025 14.2602 13.273C14.9456 13.0885 15.4859 12.5481 15.6704 11.8628C15.9999 10.6107 15.9999 8.01438 15.9999 8.01438C15.9999 8.01438 16.0131 5.40483 15.6704 4.15278Z"
+                        fill="#FF0000"
+                      />
+                      <path
+                        d="M6.40527 10.3999L10.57 8.00121L6.40527 5.60254V10.3999Z"
+                        fill="#ffffff"
+                      /></svg
+                  ></a>
+                  <a href="#"
+                    ><svg
+                      class="cursor-pointer"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_53130_7111)">
+                        <path
+                          d="M0 2.13446C0 1.61965 0.180185 1.19494 0.540541 0.860329C0.900896 0.525703 1.36937 0.358398 1.94595 0.358398C2.51223 0.358398 2.97039 0.523124 3.32046 0.852607C3.68082 1.19238 3.861 1.63509 3.861 2.18079C3.861 2.675 3.68598 3.08683 3.33591 3.41631C2.97555 3.75608 2.50193 3.92597 1.91506 3.92597H1.89961C1.33333 3.92597 0.875166 3.75608 0.525097 3.41631C0.175027 3.07655 0 2.64926 0 2.13446ZM0.200772 15.648V5.33137H3.62934V15.648H0.200772ZM5.52896 15.648H8.95753V9.88736C8.95753 9.52699 8.99872 9.24899 9.08108 9.05338C9.22522 8.70331 9.44401 8.40729 9.73745 8.16535C10.0309 7.92339 10.399 7.80241 10.8417 7.80241C11.9949 7.80241 12.5714 8.57976 12.5714 10.1345V15.648H16V9.73291C16 8.2091 15.6396 7.05338 14.9189 6.26573C14.1982 5.47809 13.2458 5.08427 12.0618 5.08427C10.7336 5.08427 9.69884 5.6557 8.95753 6.79855V6.82944H8.94209L8.95753 6.79855V5.33137H5.52896C5.54954 5.66084 5.55985 6.68529 5.55985 8.40473C5.55985 10.1242 5.54954 12.5386 5.52896 15.648Z"
+                          fill="#0077B5"
+                        />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_53130_7111">
+                          <rect width="16" height="16" fill="#0077B5" />
+                        </clippath>
+                      </defs></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="order-2 md:order-1 surface surface-hover flex flex-col gap-4 justify-center items-center rounded-sm p-8"
+          >
+            <button class="primary-button pill-button max-w-max self-end">
+              Learn More
+              <svg
+                class="ml-2"
+                width="13"
+                height="12"
+                viewBox="0 0 13 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            class="map-responsive order-1 md:order-2 flex bg-cover bg-center"
+            style="height: 100%; aspect-ratio: 1"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8590845678946!2d36.80226987496557!3d-1.2564130987316213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17503b312f5b%3A0xf18e3a6bafbaff7f!2sNairobi%20Garage%2C%20Spring%20Valley!5e0!3m2!1sen!2ske!4v1725031044891!5m2!1sen!2ske"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <div>
+      <my-footer></my-footer>
+    </div>
+    <!-- end of footer -->
+  </body>
+</html>

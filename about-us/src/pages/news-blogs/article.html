@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/svg" href="../../../public/favicon.ico" />
+
+    <script src="../../script.js" defer></script>
+
+    <script
+      src="../../components/navbar.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="../../components/footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <script src="../../components/article-script.js" defer></script>
+
+    <style>
+      #sticky-menu {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+      }
+    </style>
+
+    <title>Ticet EDU Blog</title>
+  </head>
+  <body>
+    <!-- start of header -->
+    <div>
+      <nav-bar></nav-bar>
+    </div>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <div class="flex flex-col items-center w-full mt-20 mb-8 min-h-[95vh]">
+      <div
+        class="flex flex-col gap-6 w-screen items-center content-center pb-4 2xl:px-0"
+      >
+        <div class="flex w-full justify-center main-content">
+          <div id="article-content"></div>
+        </div>
+        <div class="hidden xl:flex xl:justify-center">
+          <div class="max-w-8xl flex flex-col gap-6">
+            <div
+              class="surface flex flex-grow-0 w-full max-w-96 lg:pt-14 lg:pb-8 px-4 rounded-t border-b border-app-colors-border dark:border-app-colors-border-d"
+            >
+              <h6
+                class="text-xs md:text-sm lg:text-base text-app-colors-p-small dark:text-app-colors-p-small-d"
+              >
+                Popular Articles
+              </h6>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4">
+              <div>
+                <div class="group surface surface-hover rounded">
+                  <div
+                    class="py-4 bg-no-repeat bg-cover bg-center h-24 w-full rounded-t"
+                    style="
+                      background-image: url(../../../public/assets/frame-0.jpg);
+                    "
+                  ></div>
+                  <div class="flex flex-col gap-4 p-4">
+                    <a href="article.html?id=5">
+                      <h6
+                        class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                      >
+                        Sample Article 5
+                      </h6>
+                    </a>
+                    <p class="p-small line-clamp-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button
+                      class="hidden primary-button pill-button max-w-max self-end"
+                    >
+                      Learn More
+                      <svg
+                        class="ml-2"
+                        width="13"
+                        height="12"
+                        viewBox="0 0 13 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="group surface surface-hover rounded">
+                  <div
+                    class="py-4 bg-no-repeat bg-cover bg-center h-24 w-full rounded-t"
+                    style="
+                      background-image: url(../../../public/assets/frame-0.jpg);
+                    "
+                  ></div>
+                  <div class="flex flex-col gap-4 p-4">
+                    <a href="article.html?id=1">
+                      <h6
+                        class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                      >
+                        Sample Article 1
+                      </h6>
+                    </a>
+                    <p class="p-small line-clamp-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button
+                      class="hidden primary-button pill-button max-w-max self-end"
+                    >
+                      Learn More
+                      <svg
+                        class="ml-2"
+                        width="13"
+                        height="12"
+                        viewBox="0 0 13 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="group surface surface-hover rounded">
+                  <div
+                    class="py-4 bg-no-repeat bg-cover bg-center h-24 w-full rounded-t"
+                    style="
+                      background-image: url(../../../public/assets/frame-0.jpg);
+                    "
+                  ></div>
+                  <div class="flex flex-col gap-4 p-4">
+                    <a href="article.html?id=5">
+                      <h6
+                        class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                      >
+                        Sample Article 5
+                      </h6>
+                    </a>
+                    <p class="p-small line-clamp-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button
+                      class="hidden primary-button pill-button max-w-max self-end"
+                    >
+                      Learn More
+                      <svg
+                        class="ml-2"
+                        width="13"
+                        height="12"
+                        viewBox="0 0 13 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="group surface surface-hover rounded">
+                  <div
+                    class="py-4 bg-no-repeat bg-cover bg-center h-24 w-full rounded-t"
+                    style="
+                      background-image: url(../../../public/assets/frame-0.jpg);
+                    "
+                  ></div>
+                  <div class="flex flex-col gap-4 p-4">
+                    <a href="article.html?id=5">
+                      <h6
+                        class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                      >
+                        Sample Article 5
+                      </h6>
+                    </a>
+                    <p class="p-small line-clamp-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <button
+                      class="hidden primary-button pill-button max-w-max self-end"
+                    >
+                      Learn More
+                      <svg
+                        class="ml-2"
+                        width="13"
+                        height="12"
+                        viewBox="0 0 13 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <div>
+      <my-footer></my-footer>
+    </div>
+    <!-- end of footer -->
+
+    <script>
+      function setActiveTab(element, contentId) {
+        // Reset all tabs to initial color
+        document.querySelectorAll("#tabs h6").forEach((tab) => {
+          tab.style.color = "";
+        });
+
+        // Set the clicked tab to the active color
+        element.style.color = "#e28f00";
+
+        // Show the corresponding content
+        showContent(contentId);
+      }
+    </script>
+
+    <script>
+      function showContent(tab) {
+        document.querySelectorAll(".tab-content").forEach((content) => {
+          content.style.display = "none";
+        });
+        document.getElementById(tab).style.display = "flex";
+      }
+    </script>
+  </body>
+</html>

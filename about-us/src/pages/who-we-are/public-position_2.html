@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="icon" type="image/svg" href="../../../public/favicon.ico" />
+
+    <script src="../../script.js" defer></script>
+
+    <script
+      src="../../components/navbar.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="../../components/footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <style>
+      #sticky-menu {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+      }
+      .active {
+        color: #e28f00;
+      }
+    </style>
+
+    <title>Ticet EDU - Who We</title>
+  </head>
+
+  <body>
+    <!-- start of header -->
+    <div>
+      <nav-bar></nav-bar>
+    </div>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <div class="flex flex-col items-center w-full mt-20 my-8">
+      <div
+        class="flex justify-center items-center w-full min-w-screen h-screen bg-primary-900 dark:bg-primary-950 bg-cover bg-fixed bg-top bg-no-repeat bg-blend-multiply"
+        style="
+          background-image: url(../../../public/assets/what_we_do-2.jpg);
+          height: 83vh;
+          background-position: top;
+        "
+      >
+        <div
+          class="max-w-5xl flex gap-4 flex-col justify-center items-center py-10 mx-4 xl:mx-0"
+        >
+          <div class="flex gap-4 flex-col items-center">
+            <img src="../../../public/assets/logo-light.svg" alt="ticet logo" />
+            <h6
+              class="uppercase text-secondary-yellow-500 dark:text-secondary-yellow-500"
+            >
+              collaborative learning
+            </h6>
+          </div>
+          <p
+            class="p-small text-center text-app-colors-heading-d dark:text-app-colors-heading-d"
+          >
+            Ticet EDU Limited is committed to academic integrity,
+            sustainability, and inclusivity. We aim to enhance education by
+            fostering collaboration, embracing eco-friendly practices,
+            protecting user data, promoting diversity, and ensuring accessible,
+            high-quality education for all.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full items-center">
+        <div class="surface sticky top-20 xl:flex justify-center h-full w-full">
+          <button
+            data-collapse-toggle="content-navbar-dropdown"
+            type="button"
+            class="inline-flex items-center w-full max-w-8xl borders border-b py-8 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="content-navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open content menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            id="content-navbar-dropdown"
+            class="top-16 xl:relative xl:top-0 flex flex-col xl:flex-row gap-2 w-full max-w-8xl borders border-b py-4"
+          >
+            <p class="flex justify-center w-full p-small font-medium py-2">
+              <a href="#section1" class="menu-link text-hover text-center"
+                >Academic Dishonesty</a
+              >
+            </p>
+            <p class="flex justify-center w-full p-small font-medium py-2">
+              <a href="#section2" class="menu-link text-hover text-center"
+                >Competition</a
+              >
+            </p>
+            <p class="flex justify-center w-full p-small font-medium py-2">
+              <a href="#section3" class="menu-link text-hover text-center"
+                >Privacy &amp; Data Protection</a
+              >
+            </p>
+            <p class="flex justify-center w-full p-small font-medium py-2">
+              <a href="#section4" class="menu-link text-hover text-center"
+                >Sustainability</a
+              >
+            </p>
+            <p class="flex justify-center w-full p-small font-medium py-2">
+              <a href="#section5" class="menu-link text-hover text-center"
+                >Diversity, Equity, &amp; Inclusion</a
+              >
+            </p>
+            <p class="flex justify-center w-full p-small font-medium py-2">
+              <a href="#section6" class="menu-link text-hover text-center"
+                >Education for All</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-8 sm:gap-10 md:gap-14 lg:gap-16 xl:gap-20 w-full max-w-8xl mt-4"
+        >
+          <section
+            id="section1"
+            class="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-14 lg:gap-16 xl:gap-20 py-6 scroll-mt-40"
+          >
+            <div
+              class="h-96 lg:h-auto bg-center bg-cover rounded-md"
+              style="
+                background-image: url(../../../public/assets/position-academic_dishonesty.jpg);
+              "
+            ></div>
+            <div class="flex flex-col justify-center w-full px-6 2xl:px-0">
+              <h5 class="pb-4">Academic Dishonesty</h5>
+              <p class="p-small mb-2">
+                At Ticet EDU Limited, we strongly oppose academic dishonesty in
+                all its forms, including plagiarism, cheating, and
+                misrepresentation of work. We believe that integrity and
+                originality are foundational to the learning process and
+                essential for personal and academic growth. To uphold these
+                values, we are committed to fostering a culture of honesty and
+                ethical behavior among our users.
+              </p>
+              <p class="p-small mb-2">
+                Our platform incorporates a range of tools and resources
+                designed to create awareness about academic dishonesty and
+                educate users on the importance of producing original content.
+                We provide guidelines, tutorials, and interactive modules that
+                teach users about the principles of intellectual honesty and the
+                consequences of academic misconduct. Additionally, our platform
+                features plagiarism detection tools that help users ensure their
+                work is original and properly cited.
+              </p>
+              <p class="p-small mb-2">
+                We also encourage a community-driven approach to academic
+                integrity by promoting peer review and feedback mechanisms. By
+                empowering users to create and share original content, we aim to
+                cultivate an environment where academic honesty is valued and
+                celebrated. At Ticet EDU, we are dedicated to supporting our
+                users in developing the skills and mindset needed to succeed
+                ethically in their academic and professional endeavors.
+              </p>
+            </div>
+          </section>
+
+          <section
+            id="section2"
+            class="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-14 lg:gap-16 xl:gap-20 py-6 scroll-mt-40"
+          >
+            <div
+              class="h-96 lg:h-auto bg-center bg-cover rounded-md lg:order-1"
+              style="
+                background-image: url(../../../public/assets/position-competition.jpg);
+              "
+            ></div>
+            <div class="flex flex-col justify-center w-full px-6 2xl:px-0">
+              <h5 class="pb-4">Competition</h5>
+              <p class="p-small mb-2">
+                At Ticet EDU Limited, we believe that the edtech industry is a
+                dynamic and rapidly evolving space with tremendous potential to
+                transform education. We recognize that the market is largely
+                untapped and can accommodate multiple local and international
+                players, each contributing to the betterment of education by
+                enhancing accessibility and quality. Rather than viewing other
+                edtech solutions as competitors, we see them as partners in our
+                shared mission to make learning more inclusive, engaging, and
+                effective for all.
+              </p>
+              <p class="p-small mb-2">
+                Ticet EDU positions itself as a facilitator within the edtech
+                ecosystem. Our platform is designed to be open and
+                collaborative, allowing us to integrate and onboard third-party
+                edtech solutions seamlessly. By providing a space where various
+                educational tools and resources can coexist, we aim to create a
+                holistic learning environment that caters to diverse needs and
+                learning styles.
+              </p>
+              <p class="p-small mb-2">
+                We believe that fostering a collaborative approach in the edtech
+                industry will drive innovation, improve educational outcomes,
+                and provide learners worldwide with the best possible
+                opportunities. At Ticet EDU, we are committed to working
+                alongside other edtech companies to empower educators and
+                learners, ultimately contributing to a brighter future for
+                education globally.
+              </p>
+            </div>
+          </section>
+
+          <section
+            id="section3"
+            class="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-14 lg:gap-16 xl:gap-20 py-6 scroll-mt-40"
+          >
+            <div
+              class="h-96 lg:h-auto bg-center bg-cover rounded-md"
+              style="
+                background-image: url(../../../public/assets/position-data_protection.jpg);
+              "
+            ></div>
+            <div class="flex flex-col justify-center w-full px-6 2xl:px-0">
+              <h5 class="pb-4">Privacy &amp; Data Protection</h5>
+              <p class="p-small mb-2">
+                At Ticet EDU Limited, user privacy and data protection are
+                paramount. We understand that safeguarding personal information
+                is a top concern for our users, and we are committed to
+                addressing these concerns with the highest standards of security
+                and transparency.
+              </p>
+              <p class="p-small mb-2">
+                Our platform employs robust measures to ensure your data is
+                protected from unauthorized access and breaches. We use advanced
+                encryption techniques, anonymization, and pseudonymization to
+                secure your personal data both in transit and at rest. Our data
+                processing practices are in strict compliance with data
+                protection laws, including the Data Protection Act, 2019
+                (Kenya).
+              </p>
+              <p class="p-small mb-2">
+                We are transparent about our data collection practices, only
+                collecting information necessary to provide and improve our
+                services. Users have the right to access, rectify, or request
+                the deletion of their personal data at any time. We ensure that
+                data is retained only for as long as needed and securely deleted
+                when no longer required.
+              </p>
+              <p class="p-small mb-2">
+                Our privacy policy outlines how we collect, use, and protect
+                your data, and we regularly review and update it to reflect
+                changes in laws and best practices. By prioritizing your privacy
+                and implementing stringent data protection measures, Ticet EDU
+                aims to create a secure and trustworthy environment for all our
+                users.
+              </p>
+              <p class="p-small mb-2">
+                For more details on our data protection and privacy practices,
+                please refer to our
+                <a
+                  href="../../pages/legal-policies/legal-policies.html#privacy"
+                  class="text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+                  >Privacy Policy</a
+                >
+                and
+                <a
+                  href="../../pages/legal-policies/legal-policies.html#data-protection"
+                  class="text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+                  >Data Protection Policy</a
+                >
+                .
+              </p>
+            </div>
+          </section>
+
+          <section
+            id="section4"
+            class="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-14 lg:gap-16 xl:gap-20 py-6 scroll-mt-40"
+          >
+            <div
+              class="h-96 lg:h-auto bg-center bg-cover rounded-md lg:order-1"
+              style="
+                background-image: url(../../../public/assets/position-sustainability.jpg);
+              "
+            ></div>
+            <div class="flex flex-col justify-center w-full px-6 2xl:px-0">
+              <h5 class="pb-4">Sustainability</h5>
+              <p class="p-small mb-2">
+                At Ticet EDU Limited, sustainability is integral to our mission.
+                We are committed to creating a positive impact on both the
+                environment and society through responsible practices and
+                innovative solutions. Our approach to sustainability encompasses
+                environmental stewardship, resource efficiency, and social
+                responsibility.
+              </p>
+              <p class="p-small mb-2">
+                We prioritize eco-friendly practices in our operations, from
+                reducing our carbon footprint through energy-efficient data
+                centers to minimizing waste through digital solutions. Our
+                platform is designed to be energy-efficient, leveraging cloud
+                technologies that optimize resource use and reduce environmental
+                impact.
+              </p>
+              <p class="p-small mb-2">
+                Socially, we focus on promoting inclusivity and equitable access
+                to education. By providing a platform that supports diverse
+                learning needs and fosters global collaboration, we contribute
+                to educational equity and empower learners worldwide.
+              </p>
+              <p class="p-small mb-2">
+                Our sustainability efforts also extend to engaging with our
+                community and stakeholders. We actively seek partnerships with
+                organizations that share our commitment to sustainability and
+                participate in initiatives that support environmental and social
+                causes.
+              </p>
+              <p class="p-small mb-2">
+                At Ticet EDU, sustainability is more than a policy—it's a core
+                tenet that drives our operations and innovations. We
+                continuously evaluate and enhance our practices to ensure that
+                we contribute positively to the planet and society, aligning our
+                business goals with our commitment to a sustainable future.
+              </p>
+              <p class="p-small mb-2">
+                For more information on our sustainability practices, visit
+                <a
+                  href="../../pages/our-impact/triple-bottom-line.html"
+                  class="text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+                  >Our Impact</a
+                >
+                page.
+              </p>
+            </div>
+          </section>
+
+          <section
+            id="section5"
+            class="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-14 lg:gap-16 xl:gap-20 py-6 scroll-mt-40"
+          >
+            <div
+              class="h-96 lg:h-auto bg-center bg-cover rounded-md"
+              style="
+                background-image: url(../../../public/assets/position-DEI.jpg);
+              "
+            ></div>
+            <div class="flex flex-col justify-center w-full px-6 2xl:px-0">
+              <h5 class="pb-4">Diversity, Equity, &amp; Inclusion</h5>
+              <p class="p-small mb-2">
+                At Ticet EDU Limited, Diversity, Equity, and Inclusion (DEI) are
+                fundamental to our culture and operations. We are dedicated to
+                fostering a diverse and inclusive workplace where every
+                individual, regardless of background, identity, or perspective,
+                feels valued and empowered.
+              </p>
+              <p class="p-small mb-2">
+                As an employer, we actively promote diversity by implementing
+                fair hiring practices that ensure equal opportunities for all
+                candidates. Our recruitment processes are designed to attract a
+                wide range of talent, and we are committed to providing an
+                inclusive environment where diverse voices and perspectives
+                drive innovation and creativity.
+              </p>
+              <p class="p-small mb-2">
+                We extend our DEI commitment to our suppliers and content
+                creators, partnering with organizations and individuals who
+                share our values. We seek to collaborate with diverse suppliers
+                and creators to enrich our platform with varied perspectives and
+                content that reflects the global community we serve.
+              </p>
+              <p class="p-small mb-2">
+                Ticet EDU is dedicated to continuous learning and improvement in
+                DEI practices. We provide ongoing training and resources to our
+                team, fostering an environment of respect and understanding. Our
+                goal is to create a supportive, equitable, and inclusive space
+                that empowers everyone to thrive.
+              </p>
+              <p class="p-small mb-2">
+                For more details on our DEI initiatives, visit our
+                <a
+                  href="../../pages/our-workplace/diversity-equity-inclusion.html"
+                  class="text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+                  >Diversity, Equity &amp; Inclusion</a
+                >
+                page.
+              </p>
+            </div>
+          </section>
+
+          <section
+            id="section6"
+            class="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-14 lg:gap-16 xl:gap-20 py-6 scroll-mt-40"
+          >
+            <div
+              class="h-96 lg:h-auto bg-center bg-cover rounded-md lg:order-1"
+              style="
+                background-image: url(../../../public/assets/position-education.jpg);
+              "
+            ></div>
+            <div class="flex flex-col justify-center w-full px-6 2xl:px-0">
+              <h5 class="pb-4">Education for All</h5>
+              <p class="p-small mb-2">
+                At Ticet EDU Limited, we firmly believe that education is a
+                powerful equalizer and a fundamental right that should be
+                accessible and affordable to everyone. We are dedicated to
+                breaking down barriers to education by providing a platform that
+                supports inclusive and equitable learning opportunities for all
+                individuals, regardless of their background or financial status.
+              </p>
+              <p class="p-small mb-2">
+                Our commitment to "Education for All" aligns with the
+                <a
+                  href="https://www.unesco.org/sdg4education2030/en/sdg4#:~:text=UN-,Definition%20of%20SDG4%3A,a%20sustainable%20and%20equitable%20world."
+                  class="text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+                  >United Nations Sustainable Development Goal 4: Quality
+                  Education (SDG 4)
+                  <span class="inline-flex"
+                    ><svg
+                      width="10"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="#35b0fc"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.5796 10.09C10.7785 10.0898 10.9691 10.0107 11.1096 9.87L18.1696 2.81V6.46C18.1696 6.65891 18.2486 6.84968 18.3893 6.99033C18.5299 7.13098 18.7207 7.21 18.9196 7.21C19.1185 7.21 19.3093 7.13098 19.4499 6.99033C19.5906 6.84968 19.6696 6.65891 19.6696 6.46V1C19.6696 0.801088 19.5906 0.610322 19.4499 0.46967C19.3093 0.329018 19.1185 0.25 18.9196 0.25H13.4596C13.2607 0.25 13.0699 0.329018 12.9293 0.46967C12.7886 0.610322 12.7096 0.801088 12.7096 1C12.7096 1.19891 12.7886 1.38968 12.9293 1.53033C13.0699 1.67098 13.2607 1.75 13.4596 1.75H17.1096L9.99961 8.81C9.89486 8.91489 9.82353 9.04847 9.79465 9.19386C9.76576 9.33926 9.78062 9.48996 9.83733 9.62692C9.89404 9.76389 9.99007 9.88097 10.1133 9.96339C10.2365 10.0458 10.3814 10.0899 10.5296 10.09H10.5796Z"
+                      />
+                      <path
+                        d="M19.0002 10.81C18.8013 10.81 18.6106 10.889 18.4699 11.0297C18.3293 11.1703 18.2502 11.3611 18.2502 11.56V17.76C18.2502 17.89 18.1986 18.0146 18.1067 18.1065C18.0148 18.1984 17.8902 18.25 17.7602 18.25H2.24023C2.11028 18.25 1.98564 18.1984 1.89375 18.1065C1.80186 18.0146 1.75023 17.89 1.75023 17.76V2.24C1.75023 2.11004 1.80186 1.98541 1.89375 1.89352C1.98564 1.80162 2.11028 1.75 2.24023 1.75H8.11023C8.30915 1.75 8.49991 1.67098 8.64056 1.53033C8.78122 1.38968 8.86023 1.19891 8.86023 1C8.86023 0.801088 8.78122 0.610322 8.64056 0.46967C8.49991 0.329018 8.30915 0.25 8.11023 0.25H2.24023C1.7098 0.25 1.20109 0.460714 0.826021 0.835786C0.450948 1.21086 0.240234 1.71957 0.240234 2.25V17.76C0.240234 18.2904 0.450948 18.7991 0.826021 19.1742C1.20109 19.5493 1.7098 19.76 2.24023 19.76H17.7602C18.2907 19.76 18.7994 19.5493 19.1744 19.1742C19.5495 18.7991 19.7602 18.2904 19.7602 17.76V11.56C19.7602 11.4607 19.7405 11.3623 19.7022 11.2707C19.6639 11.179 19.6077 11.0959 19.537 11.0261C19.4663 10.9563 19.3825 10.9013 19.2903 10.8642C19.1982 10.8271 19.0996 10.8087 19.0002 10.81Z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                , which aims to ensure inclusive and equitable quality education
+                and promote lifelong learning opportunities for all. By
+                leveraging technology and innovative solutions, Ticet EDU
+                strives to make high-quality education accessible and
+                affordable, reaching learners in diverse geographical and
+                socio-economic contexts.
+              </p>
+              <p class="p-small mb-2">
+                Collaboration is central to achieving this vision. We actively
+                partner with educational institutions, content creators, and
+                non-profit organizations to enhance our platform's offerings and
+                extend its reach. Through these collaborations, we aim to enrich
+                our educational resources and support systems, ensuring that all
+                learners have the tools and opportunities they need to succeed.
+              </p>
+              <p class="p-small mb-2">
+                Ticet EDU is committed to promoting lifelong learning and
+                educational equity, contributing to a global movement towards a
+                more inclusive and informed society.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <div>
+      <my-footer></my-footer>
+    </div>
+    <!-- end of footer -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuLinks = document.querySelectorAll(".menu-link");
+        const sections = document.querySelectorAll("section");
+
+        function activateMenuLink() {
+          let scrollPos = window.scrollY + window.innerHeight / 2 - 40;
+          let index = sections.length;
+          while (--index && scrollPos < sections[index].offsetTop) {}
+
+          menuLinks.forEach((link) => link.classList.remove("active"));
+          menuLinks[index].classList.add("active");
+        }
+
+        function scrollToSection(event) {
+          event.preventDefault();
+          const targetId = event.currentTarget
+            .getAttribute("href")
+            .substring(1);
+          const targetSection = document.getElementById(targetId);
+          const offsetPosition = targetSection.offsetTop - 160; // Adjusting for the navbar height
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", scrollToSection);
+        });
+
+        window.addEventListener("scroll", activateMenuLink);
+        window.addEventListener("load", activateMenuLink);
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const collapseToggle = document.querySelector(
+          "[data-collapse-toggle='content-navbar-dropdown']"
+        );
+        const navbarDropdown = document.getElementById(
+          "content-navbar-dropdown"
+        );
+
+        function updateNavbarState() {
+          if (window.innerWidth >= 1280) {
+            // xl breakpoint
+            navbarDropdown.classList.remove("hidden");
+            navbarDropdown.classList.add("flex");
+          } else {
+            navbarDropdown.classList.add("hidden");
+            navbarDropdown.classList.remove("flex");
+          }
+        }
+
+        collapseToggle.addEventListener("click", function () {
+          navbarDropdown.classList.toggle("hidden");
+          navbarDropdown.classList.toggle("flex");
+        });
+
+        document.addEventListener("click", function (event) {
+          if (
+            !navbarDropdown.contains(event.target) &&
+            !collapseToggle.contains(event.target)
+          ) {
+            if (window.innerWidth < 1280) {
+              navbarDropdown.classList.add("hidden");
+              navbarDropdown.classList.remove("flex");
+            }
+          }
+        });
+
+        window.addEventListener("resize", updateNavbarState);
+        updateNavbarState(); // Initial check when the page loads
+
+        window.addEventListener("beforeunload", function () {
+          window.removeEventListener("resize", updateNavbarState);
+        });
+      });
+    </script>
+  </body>
+</html>

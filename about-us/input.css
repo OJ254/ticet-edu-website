@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* Use Roboto for the body */
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* Use Archivo for headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Archivo", sans-serif;
+  }
+
+  /* Use Lato for titles */
+  title {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  title {
+    @apply antialiased text-app-colors-heading dark:text-app-colors-heading-d;
+  }
+
+  body,
+  body {
+    @apply scroll-smooth bg-app-colors-body-bg dark:bg-app-colors-body-bg-d;
+  }
+
+  /* Responsive Typography */
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-8xl font-bold leading-tight tracking-normal;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-semibold leading-snug tracking-normal;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-medium leading-snug tracking-normal;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl md:text-3xl font-semibold leading-snug tracking-normal;
+  }
+
+  h5 {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl font-medium leading-snug tracking-normal;
+  }
+
+  h6 {
+    @apply text-base sm:text-lg md:text-xl font-medium leading-snug tracking-normal;
+  }
+
+  title {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extralight leading-snug tracking-normal;
+  }
+
+  .sub-title {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-extralight leading-snug tracking-normal;
+  }
+
+  p {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl  font-normal leading-relaxed tracking-wider;
+  }
+
+  .p-lead {
+    @apply text-base sm:text-lg md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal leading-relaxed tracking-wider;
+  }
+
+  .p-small {
+    @apply text-app-colors-p-small dark:text-app-colors-p-small-d text-sm sm:text-base lg:text-lg font-normal leading-relaxed tracking-wider;
+  }
+
+  .p-smaller {
+    @apply text-app-colors-p-smaller dark:text-app-colors-p-smaller-d text-xs sm:text-sm font-normal leading-relaxed tracking-wider;
+  }
+
+  .text-hover {
+    @apply ease-in-out transition duration-300 hover:text-secondary-yellow-500 dark:hover:text-secondary-yellow-500 focus:text-secondary-yellow-600 dark:focus:text-secondary-yellow-600;
+  }
+
+  .text-group-hover {
+    @apply ease-in-out transition duration-300 hover:text-secondary-yellow-500 group-hover:text-secondary-yellow-500 dark:hover:text-secondary-yellow-500 dark:group-hover:text-secondary-yellow-500 focus:text-secondary-yellow-500;
+  }
+
+  .borders {
+    @apply border-app-colors-border dark:border-app-colors-border-d;
+  }
+}
+
+@layer components {
+  .surface-primary {
+    @apply bg-primary-800 dark:bg-primary-900;
+  }
+
+  .surface {
+    @apply bg-app-colors-surface dark:bg-app-colors-surface-d;
+  }
+
+  .surface-hover {
+    @apply hover:bg-app-colors-surface-h dark:hover:bg-app-colors-surface-d-h;
+  }
+
+  .pill-button {
+    @apply flex justify-center items-center font-medium leading-relaxed tracking-normal text-white cursor-pointer focus:outline-none rounded-full px-3 py-2 text-center ease-in-out transition duration-300;
+  }
+
+  .rounded-button {
+    @apply flex gap-4 items-center justify-center leading-relaxed tracking-normal text-white cursor-pointer focus:outline-none font-medium rounded-lg px-5 py-2.5 ease-in-out transition duration-300;
+  }
+
+  .outline-pill-button {
+    @apply flex justify-center items-center font-medium leading-relaxed tracking-normal text-app-colors-p-normal dark:text-app-colors-p-normal-d border border-app-colors-border dark:border-app-colors-border-d focus:outline-none rounded-full px-5 py-2 text-center ease-in-out transition duration-300 cursor-default;
+  }
+
+  .disabled-button {
+    @apply bg-gray-500 dark:bg-app-colors-surface-d-h;
+  }
+
+  .gray-button {
+    @apply bg-secondary-gray-600 hover:bg-secondary-red-600;
+  }
+
+  .primary-button {
+    @apply bg-primary-main-700 hover:bg-primary-800 dark:bg-primary-main-700 dark:hover:bg-primary-900;
+  }
+
+  .primary-light-button {
+    @apply bg-transparent hover:bg-app-colors-surface-h dark:hover:bg-app-colors-surface-d-h;
+  }
+
+  .green-button {
+    @apply bg-secondary-green-400 hover:bg-secondary-green-500 dark:bg-secondary-green-400 dark:hover:bg-secondary-green-500;
+  }
+
+  .red-button {
+    @apply bg-secondary-red-500 hover:bg-secondary-red-600 dark:bg-secondary-red-500 dark:hover:bg-secondary-red-600;
+  }
+
+  .yellow-button {
+    @apply bg-secondary-yellow-500 hover:bg-secondary-yellow-600 dark:bg-secondary-yellow-500 dark:hover:bg-secondary-yellow-600;
+  }
+
+  .blue-button {
+    @apply bg-secondary-blue-500 hover:bg-secondary-blue-600 dark:bg-secondary-blue-500 dark:hover:bg-secondary-blue-600;
+  }
+
+  .icons {
+    @apply stroke-1 ease-in-out transition duration-300 fill-current text-app-colors-icon dark:text-app-colors-icons-d group-hover:text-secondary-yellow-500;
+  }
+}
+
+@layer utilities {
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 0.75rem; /* Controls space between items */
+    margin: 0 auto;
+    padding: 0 1rem; /* Optional padding */
+  }
+
+  .masonry-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px; /* Controls the space between items */
+  }
+
+  /* Small screens (sm) */
+  @media (min-width: 640px) {
+    .news-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Medium screens (md) */
+  @media (min-width: 768px) {
+    .news-container {
+      grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+  }
+
+  /* Large screens (lg) */
+  @media (min-width: 1024px) {
+    .news-container {
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    }
+  }
+
+  /* Extra Large screens (xl) */
+  @media (min-width: 1280px) {
+    .news-container {
+      grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+  }
+
+  /* 2XL screens */
+  @media (min-width: 1600px) {
+    .news-container {
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    }
+  }
+
+  .newsletter-masonry-item {
+    display: block;
+    width: 100%;
+  }
+
+  /* Make specific items span 2 columns */
+  .newsletter-masonry-item.span-2 {
+    grid-column: span 2;
+  }
+
+  /* Make specific items span 3 columns */
+  .newsletter-masonry-item.span-3 {
+    grid-column: span 3;
+  }
+
+  .background {
+    background-image: url("../public/assets/ticet_bg1.png");
+    background-repeat: "repeat-x";
+    animation: "slide 30s linear infinite";
+  }
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 25%; /* Starting position: top-right corner */
+    }
+    100% {
+      background-position: 100% 0; /* Ending position: bottom-left corner */
+    }
+  }
+
+  /* Custom scrollbar styles */
+  .overflow-x-auto::-webkit-scrollbar,
+  .overflow-y-auto::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .overflow-x-auto::-webkit-scrollbar-track,
+  .overflow-y-auto::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .overflow-x-auto::-webkit-scrollbar-thumb,
+  .overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: #6750a4;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+  }
+
+  .overflow-x-auto::-webkit-scrollbar-button,
+  .overflow-y-auto::-webkit-scrollbar-button {
+    background-color: #6750a4;
+    border-radius: 0%;
+    height: 0px;
+    width: 0px;
+  }
+
+  .overflow-x-auto::-webkit-scrollbar-button:vertical:decrement,
+  .overflow-x-auto::-webkit-scrollbar-button:vertical:increment
+    .overflow-y-auto::-webkit-scrollbar-button:horizontal:decrement,
+  .overflow-y-auto::-webkit-scrollbar-button:horizontal:increment {
+    background-color: #6750a4;
+  }
+
+  .overflow-x-auto::-webkit-scrollbar-button:horizontal:decrement,
+  .overflow-x-auto::-webkit-scrollbar-button:horizontal:increment,
+  .overflow-y-auto::-webkit-scrollbar-button:vertical:decrement,
+  .overflow-y-auto::-webkit-scrollbar-button:vertical:increment {
+    background-color: #6750a4;
+  }
+
+  .scrollCarousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .line-clamp-8 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+  }
+
+  .line-clamp-7 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+  }
+}

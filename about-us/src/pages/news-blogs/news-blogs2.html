@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="icon" type="image/svg" href="../../../public/favicon.ico" />
+
+    <style>
+      #sticky-menu {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+      }
+    </style>
+
+    <!-- <script
+      src="../../components/navbar.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="../../components/footer.js"
+      type="text/javascript"
+      defer
+    ></script> -->
+
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+
+    <script src="../../script.js" defer></script>
+
+    <title>Ticet EDU - Blog &amp; Newsletter</title>
+  </head>
+
+  <body>
+    <!-- start of header -->
+    <div>
+      <nav-bar></nav-bar>
+    </div>
+    <!-- end of header -->
+
+    <!-- start of main -->
+
+    <div class="flex flex-col items-center w-full mt-20 my-8">
+      <div
+        class="flex w-full h-full px-4 md:px-6 lg:px-8 text-center bg-primary-main-700 justify-center bg-cover bg-center"
+        style="background-image: url(../../../public/assets/news-blogs_bg.png)"
+      >
+        <div class="flex flex-col items-center w-full max-w-8xl">
+          <div class="flex flex-col items-center gap-4 w-full max-w-5xl">
+            <title class="sub-title flex font- font-medium text-white mt-12">
+              Ticet EDU Blog &amp; Newsletter
+            </title>
+            <p
+              class="p-small text-app-colors-heading-d dark:text-app-colors-heading-d mb-5"
+            >
+              Welcome to our blog! Your go-to source for all things education,
+              from classroom insights to cutting-edge ed-tech. Join our
+              community of lifelong learners and stay informed, inspired, and
+              empowered.
+            </p>
+          </div>
+          <img
+            src="../../../public/assets/blogs-bottom.png"
+            alt=""
+            class="flex w-full max-w-6xl mt-6"
+          />
+        </div>
+      </div>
+
+      <div class="flex gap-8 flex-col w-full justify-center items-center pb-8">
+        <div class="surface sticky top-20 flex justify-center h-full w-full">
+          <div
+            class="flex justify-start items-center w-full max-w-8xl borders border-b py-6 mx-4 xl:mx-0"
+          >
+            <div
+              id="tabs"
+              class="top-16 xl:relative xl:top-0 flex gap-2 w-full select-none"
+            >
+              <a href="./news-blogs.html#ticetBlog"
+                ><h6
+                  class="text-hover flex justify-center text-center py-2 pr-2 md:pr-4 cursor-pointer"
+                  onclick="setActiveTab(this, 'ticetBlog')"
+                  style="color: #e28f00"
+                >
+                  Ticet EDU Blog
+                </h6></a
+              >
+              <a href="./news-blogs.html#ticetNewsletter"
+                ><h6
+                  class="text-hover flex justify-center text-center py-2 px-2 md:px-4 cursor-pointer"
+                  onclick="setActiveTab(this, 'ticetNewsletter')"
+                >
+                  Ticet EDU Newsletter
+                </h6></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="content" class="w-full max-w-8xl mx-4 xl:mx-0 scroll-mt-52">
+          <div id="ticetBlog" class="tab-content flex gap-6 scroll-mt-52">
+            <div class="flex gap-6 w-full">
+              <div class="flex-grow">
+                <div id="masonry-blog" class="blog-container">
+                  <div class="blog-masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <img src="../../../" alt="" />
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden xl:flex xl:flex-col xl:flex-grow-0 xl:w-100">
+                <div class="lg:flex lg:flex-col gap-6">
+                  <div
+                    class="surface lg:pt-14 lg:pb-8 px-4 rounded-t border-b border-app-colors-border dark:border-app-colors-border-d"
+                  >
+                    <h6
+                      class="text-xs md:text-sm lg:text-base text-app-colors-p-small dark:text-app-colors-p-small-d"
+                    >
+                      Suggested Libraries
+                    </h6>
+                  </div>
+
+                  <div class="w-80 xl:w-96 flex-shrink-0">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          recommended Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small line-clamp-6">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="ticetNewsletter"
+            class="tab-content flex gap-4 md:gap-6 lg:gap-8 items-center justify-center scroll-mt-52"
+            style="display: none"
+          >
+            <div class="flex gap-6 w-full">
+              <div class="flex-grow">
+                <div
+                  id="masonry-news"
+                  class="news-container grid auto-rows-min grid-cols-auto-fill-260 gap-6"
+                >
+                  <div class="masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="masonry-item">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden xl:flex xl:flex-col xl:flex-grow-0 xl:w-100">
+                <div class="lg:flex lg:flex-col gap-6">
+                  <div
+                    class="surface lg:pt-14 lg:pb-8 px-4 rounded-t border-b border-app-colors-border dark:border-app-colors-border-d"
+                  >
+                    <h6
+                      class="text-xs md:text-sm lg:text-base text-app-colors-p-small dark:text-app-colors-p-small-d"
+                    >
+                      Suggested Libraries
+                    </h6>
+                  </div>
+
+                  <div class="w-80 xl:w-96 flex-shrink-0">
+                    <div class="group surface surface-hover rounded">
+                      <div
+                        class="py-4 bg-no-repeat bg-cover bg-center h-48 w-full rounded-t"
+                        style="
+                          background-image: url(../../../public/assets/frame-0.jpg);
+                        "
+                      ></div>
+                      <div class="flex flex-col gap-4 p-4">
+                        <h6
+                          class="font-medium text-secondary-yellow-600 dark:text-secondary-yellow-600 hover:text-secondary-yellow-500 hover:dark:text-secondary-yellow-500 cursor-pointer line-clamp-2"
+                        >
+                          recommended Diversity and Inclusion 1 social
+                        </h6>
+                        <p class="p-small line-clamp-6">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat.
+                        </p>
+                        <button
+                          class="primary-button pill-button max-w-max self-end"
+                        >
+                          Learn More
+                          <svg
+                            class="ml-2"
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M8.3025 5.36567V6.699H9.63583V5.36567H8.3025ZM3.3125 10.7457L4.25517 11.6883L8.0265 7.91767L7.08383 6.975L3.3125 10.7457ZM3.3125 1.31833L7.08383 5.089L8.0265 4.14633L4.25517 0.375L3.3125 1.31833Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <div>
+      <my-footer></my-footer>
+    </div>
+    <!-- end of footer -->
+  </body>
+
+  <script>
+    function setActiveTab(element, contentId) {
+      // Reset all tabs to initial color
+      document.querySelectorAll("#tabs h6").forEach((tab) => {
+        tab.style.color = "";
+      });
+
+      // Set the clicked tab to the active color
+      element.style.color = "#e28f00";
+
+      // Show the corresponding content
+      showContent(contentId);
+    }
+  </script>
+
+  <script>
+    function showContent(tab) {
+      document.querySelectorAll(".tab-content").forEach((content) => {
+        content.style.display = "none";
+      });
+      document.getElementById(tab).style.display = "flex";
+    }
+  </script>
+
+  <!-- navbar and footer script to be converted to components -->
+  <script>
+    class Navbar extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.innerHTML = `
+      <nav
+        class="bg-primary-800 dark:bg-primary-900 w-full fixed z-40 top-0 start-0 h-20 flex items-center justify-center"
+      >
+        <div
+          class="xl:h-full relative w-full max-w-8xl flex flex-wrap items-center justify-between mx-4"
+        >
+          <a
+            href=".../../../index.html"
+            aria-label="home page"
+            class="flex items-center"
+          >
+            <img
+              id="logo-light"
+              class="hidden h-12 2xl:h-12"
+              src="../../../public/assets/logo-light.svg"
+              alt=""
+            />
+
+            <img
+              id="logo-dark"
+              class="hidden h-12 2xl:h-12"
+              src="../../../public/assets/logo-light.svg"
+              alt=""
+            />
+          </a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute top-16 xl:relative xl:top-0 surface rounded-md xl:bg-primary-800 xl:dark:bg-primary-900 hidden w-full xl:flex xl:h-full xl:items-center xl:w-auto"
+            id="navbar-dropdown"
+          >
+            <ul
+              class="flex flex-col items-center gap-2 xl:h-full font-medium p-4 xl:p-0 mt-4 rounded-md xl:space-x-4 rtl:space-x-reverse xl:flex-row xl:mt-0 border borders xl:border-0"
+            >
+              <li>
+                <a
+                  href="../../../index.html"
+                  class="relative xl:h-full surface block py-2 px-3 text-app-colors-heading dark:text-app-colors-heading-d xl:text-app-colors-heading-d xl:dark:hover:text-secondary-yellow-500 xl:hover:text-secondary-yellow-500 rounded xl:bg-transparent xl:dark:bg-transparent xl:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+
+              <li
+                class="xl:flex xl:h-full xl:items-center relative group w-full xl:max-w-max"
+              >
+                <button
+                  class="surface-hover flex gap-2 items-center justify-between w-full py-2 px-3 rounded xl:hover:bg-transparent border borders xl:border-0 text-app-colors-heading dark:text-app-colors-heading-d xl:text-app-colors-heading-d xl:hover:text-secondary-yellow-500 xl:p-0 xl:w-auto xl:dark:hover:text-secondary-yellow-500 dark:focus:text-white xl:dark:hover:bg-transparent"
+                >
+                  Who we Are
+                  <svg
+                    class="icons"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.64019 7.86012H5.30686V9.19345H6.64019V7.86012ZM1.26019 2.87012L0.317525 3.81278L4.08819 7.58412L5.03086 6.64145L1.26019 2.87012ZM10.6875 2.87012L6.91686 6.64145L7.85953 7.58412L11.6309 3.81278L10.6875 2.87012Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  class="surface text-app-colors-heading dark:text-app-colors-heading-d z-50 xl:absolute xl:top-16 -mt-0.25 xl:right-0 hidden group-hover:block font-normal rounded-b-md shadow-lg w-full xl:w-60"
+                >
+                  <ul
+                    class="py-2 text-sm"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="../who-we-are/about.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >About</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../who-we-are/our-position.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Our Position</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../who-we-are/public-position_1.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Public Position</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li
+                class="xl:flex xl:h-full xl:items-center relative group w-full xl:max-w-max"
+              >
+                <button
+                  class="surface-hover flex gap-2 items-center justify-between w-full py-2 px-3 rounded xl:hover:bg-transparent border borders xl:border-0 text-app-colors-heading dark:text-app-colors-heading-d xl:text-app-colors-heading-d xl:hover:text-secondary-yellow-500 xl:p-0 xl:w-auto xl:dark:hover:text-secondary-yellow-500 dark:focus:text-white xl:dark:hover:bg-transparent"
+                >
+                  What we Do
+                  <svg
+                    class="icons"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.64019 7.86012H5.30686V9.19345H6.64019V7.86012ZM1.26019 2.87012L0.317525 3.81278L4.08819 7.58412L5.03086 6.64145L1.26019 2.87012ZM10.6875 2.87012L6.91686 6.64145L7.85953 7.58412L11.6309 3.81278L10.6875 2.87012Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  class="surface text-app-colors-heading dark:text-app-colors-heading-d z-50 xl:absolute xl:top-16 -mt-0.25 xl:right-0 hidden group-hover:block font-normal rounded-b-md shadow-lg w-full xl:w-60"
+                >
+                  <ul
+                    class="py-2 text-sm"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="../what-we-do/ticet-features.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Features</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../what-we-do/for-learners.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >For Learners</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../what-we-do/for-content-creators.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >For Content Creators</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../what-we-do/for-learning-institutions.html"
+                        class="hidden surface-hover text-hover [block] px-4 py-2"
+                        >For Learning Institutions</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li
+                class="hidden .xl:flex xl:h-full xl:items-center relative group w-full xl:max-w-max"
+              >
+                <button
+                  class="surface-hover flex gap-2 items-center justify-between w-full py-2 px-3 rounded xl:hover:bg-transparent border borders xl:border-0 text-app-colors-heading dark:text-app-colors-heading-d xl:text-app-colors-heading-d xl:hover:text-secondary-yellow-500 xl:p-0 xl:w-auto xl:dark:hover:text-secondary-yellow-500 dark:focus:text-white xl:dark:hover:bg-transparent"
+                >
+                  Our Workplace
+                  <svg
+                    class="icons"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.64019 7.86012H5.30686V9.19345H6.64019V7.86012ZM1.26019 2.87012L0.317525 3.81278L4.08819 7.58412L5.03086 6.64145L1.26019 2.87012ZM10.6875 2.87012L6.91686 6.64145L7.85953 7.58412L11.6309 3.81278L10.6875 2.87012Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  class="surface text-app-colors-heading dark:text-app-colors-heading-d z-50 xl:absolute xl:top-16 -mt-0.25 xl:right-0 hidden group-hover:block font-normal rounded-b-md shadow-lg w-full xl:w-80"
+                >
+                  <ul
+                    class="py-2 text-sm"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="../our-workplace/working-at-ticet-edu.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Working at Ticet EDU</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../our-workplace/corporate-culture.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Corporate Culture</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../our-workplace/diversity-equity-inclusion.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Diversity, Equity, and Inclusion</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../our-workplace/upskilling-training.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Upskilling and Training</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../our-workplace/career-growth-opportunities.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Career Growth and Opportunities</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../our-workplace/corporate-offices.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Corporate Offices</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li
+                class="xl:flex xl:h-full xl:items-center relative group w-full xl:max-w-max"
+              >
+                <button
+                  class="surface-hover flex gap-2 items-center justify-between w-full py-2 px-3 rounded xl:hover:bg-transparent border borders xl:border-0 text-app-colors-heading dark:text-app-colors-heading-d xl:text-app-colors-heading-d xl:hover:text-secondary-yellow-500 xl:p-0 xl:w-auto xl:dark:hover:text-secondary-yellow-500 dark:focus:text-white xl:dark:hover:bg-transparent"
+                >
+                  Our Impact
+                  <svg
+                    class="icons"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.64019 7.86012H5.30686V9.19345H6.64019V7.86012ZM1.26019 2.87012L0.317525 3.81278L4.08819 7.58412L5.03086 6.64145L1.26019 2.87012ZM10.6875 2.87012L6.91686 6.64145L7.85953 7.58412L11.6309 3.81278L10.6875 2.87012Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  class="surface text-app-colors-heading dark:text-app-colors-heading-d z-50 xl:absolute xl:top-16 -mt-0.25 xl:right-0 hidden group-hover:block font-normal rounded-b-md shadow-lg w-full xl:w-60"
+                >
+                  <ul
+                    class="py-2 text-sm"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="../our-impact/triple-bottom-line.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Triple Bottom Line</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../our-impact/environment.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Environment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../our-impact/society.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Society</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="../our-impact/governance.html"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Governance</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li
+                class="xl:flex xl:h-full xl:items-center relative group w-full xl:max-w-max"
+              >
+                <button
+                  class="surface-hover flex gap-2 items-center justify-between w-full py-2 px-3 rounded xl:hover:bg-transparent border borders xl:border-0 text-app-colors-heading dark:text-app-colors-heading-d xl:text-app-colors-heading-d xl:hover:text-secondary-yellow-500 xl:p-0 xl:w-auto xl:dark:hover:text-secondary-yellow-500 dark:focus:text-white xl:dark:hover:bg-transparent"
+                >
+                  News/Blogs
+                  <svg
+                    class="icons"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.64019 7.86012H5.30686V9.19345H6.64019V7.86012ZM1.26019 2.87012L0.317525 3.81278L4.08819 7.58412L5.03086 6.64145L1.26019 2.87012ZM10.6875 2.87012L6.91686 6.64145L7.85953 7.58412L11.6309 3.81278L10.6875 2.87012Z"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  class="surface text-app-colors-heading dark:text-app-colors-heading-d z-50 xl:absolute xl:top-16 -mt-0.25 xl:right-0 hidden group-hover:block font-normal rounded-b-md shadow-lg w-full xl:w-60"
+                >
+                  <ul
+                    class="py-2 text-sm"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="./news-blogs.html#blogs"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Ticet EDU Blog</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./news-blogs.html#newsletter"
+                        class="surface-hover text-hover block px-4 py-2"
+                        >Ticet EDU Newsletter</a
+                      >
+                    </li>
+                    
+                  </ul>
+                </div>
+              </li>
+
+              <li
+                class="xl:flex xl:h-full xl:items-center relative group w-full xl:max-w-max"
+              >
+            <a href = "../FAQs/FAQs.html">
+              <button
+                  class="surface-hover flex gap-2 items-center justify-between w-full py-2 px-3 rounded xl:hover:bg-transparent border borders xl:border-0 text-app-colors-heading dark:text-app-colors-heading-d xl:text-app-colors-heading-d xl:hover:text-secondary-yellow-500 xl:p-0 xl:w-auto xl:dark:hover:text-secondary-yellow-500 dark:focus:text-white xl:dark:hover:bg-transparent"
+                >
+                  FAQs
+              </button>
+            </a>  
+              
+              </li>
+
+              <li class="flex gap-4">
+                <button
+                  id="theme-toggle"
+                  title="theme-toggle-button"
+                  type="button"
+                  class="text-gray-300 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg p-2.5"
+                >
+                  <svg
+                    id="theme-toggle-dark-icon"
+                    class="w-6 h-6 hidden"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                  </svg>
+                  <svg
+                    id="theme-toggle-light-icon"
+                    class="w-6 h-6 hidden"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <button
+                  class="pill-button primary-button"
+                  onclick="window.location.href='https://infobrix.co.ke/'"
+                >
+                  Sign In / Register
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    `;
+      }
+    }
+
+    // Define the custom element
+    customElements.define("nav-bar", Navbar);
+  </script>
+
+  <script>
+    class Footer extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.innerHTML = `
+
+      <footer
+        class="bg-app-colors-header-bg dark:bg-app-colors-header-bg-d borders border-t bg-fixed flex justify-center w-100vw py-10 2xl:py-16"
+      >
+        <div
+          class="flex gap-4 justify-center lg:gap-8 xl:gap-12 flex-col lg:flex-row w-full max-w-8xl mx-4"
+        >
+          <div
+            class="flex flex-col items-start gap-4 w-full lg:w-1/3 pb-2 borders border-b lg:border-0"
+          >
+            <img
+              src="../../../public/assets/logo-light.svg"
+              alt="ticet logo"
+              class="h-10"
+            />
+            <div>
+              <p
+                class="text-sm text-app-colors-heading-d dark:text-app-colors-heading-d mb-4"
+              >
+                Ticet EDU is a learning experience platform that revolutionizes
+                education by fostering collaboration, using cutting-edge
+                technology, and providing personalized experiences for users.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row gap-4 w-full lg:w-2/3 pb-2 borders border-b lg:border-0"
+          >
+            <div class="flex flex-col gap-4 w-full items-center">
+              <p
+                class="text-sm text-app-colors-heading-d dark:text-app-colors-heading-d"
+              >
+                © 2024 Ticet EDU Ltd
+              </p>
+              <div class="flex flex-col gap-1 items-center">
+                <a
+                  href="../legal-policies/legal-policies.html#privacy"
+                  class="text-sm text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+                  >Privacy Policy</a
+                >
+                <a
+                  href="../legal-policies/legal-policies.html#terms-of-use"
+                  class="text-sm text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+                  >Terms of Use Policy</a
+                >
+                <a
+                  href="../legal-policies/legal-policies.html#data-protection"
+                  class="text-sm text-secondary-blue-500 dark:text-secondary-blue-500 hover:text-secondary-blue-600 dark:hover:text-secondary-blue-600"
+                  >Data Protection Policy</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row w-full gap-4 lg:gap-8 xl:gap-12 pb-2"
+            >
+              <div class="flex flex-col items-center gap-4 w-full pb-2">
+                <div class="flex flex-col gap-2 items-center">
+                  <h6
+                    class="text-base text-secondary-yellow-500 dark:text-secondary-yellow-500"
+                  >
+                    Contact Ticet EDU
+                  </h6>
+                  <address
+                    class="text-sm not-italic text-app-colors-heading-d dark:text-app-colors-heading-d"
+                  >
+                    E: info@ticet.edu
+                  </address>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                  <h6
+                    class="text-base text-secondary-yellow-500 dark:text-secondary-yellow-500"
+                  >
+                    Follow us on
+                  </h6>
+                  <div class="flex gap-3">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0379 4.78727C14.0441 4.92807 14.0441 5.06247 14.0441 5.20327C14.0503 9.47208 10.914 14.4001 5.17846 14.4001C3.48682 14.4001 1.82606 13.8945 0.399902 12.9473C0.646856 12.9793 0.89381 12.9921 1.14076 12.9921C2.54223 12.9921 3.90664 12.5057 5.01176 11.6033C3.67821 11.5777 2.50518 10.6753 2.09771 9.35688C2.56692 9.45288 3.04848 9.43368 3.50535 9.29928C2.05449 9.00488 1.01111 7.68008 1.00494 6.13767C1.00494 6.12487 1.00494 6.11207 1.00494 6.09927C1.43711 6.34887 1.92484 6.48967 2.41875 6.50247C1.05433 5.55527 0.628335 3.66726 1.45563 2.18886C3.04231 4.21126 5.37602 5.43367 7.8826 5.56807C7.62947 4.44807 7.97521 3.27046 8.78398 2.47686C10.0373 1.25446 12.0129 1.31846 13.1983 2.61766C13.8959 2.47686 14.5689 2.20806 15.1801 1.83046C14.9455 2.57926 14.4577 3.21286 13.8095 3.61606C14.4269 3.53926 15.0319 3.36646 15.5999 3.11046C15.1801 3.76326 14.6491 4.32647 14.0379 4.78727Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.4758 8.88534L11.8904 6.15524H9.2968V4.38437C9.2968 3.63728 9.65845 2.90864 10.8201 2.90864H12V0.584368C12 0.584368 10.9297 0.399902 9.90685 0.399902C7.76986 0.399902 6.37443 1.70777 6.37443 4.07447V6.15524H4V8.88534H6.37443V15.4855C6.85114 15.5612 7.33881 15.5999 7.83562 15.5999C8.33242 15.5999 8.82009 15.5612 9.2968 15.4855V8.88534H11.4758Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_53130_7109)">
+                        <path
+                          d="M7.9967 0C3.57384 0 0 3.58042 0 7.9967C0 11.3863 2.10613 14.2822 5.08104 15.4471C5.00864 14.8153 4.94941 13.8412 5.10736 13.1501C5.25216 12.5249 6.04195 9.17483 6.04195 9.17483C6.04195 9.17483 5.80502 8.69437 5.80502 7.99013C5.80502 6.87782 6.45002 6.04854 7.25298 6.04854C7.93747 6.04854 8.26656 6.5619 8.26656 7.174C8.26656 7.8585 7.83216 8.88523 7.60181 9.83957C7.41094 10.636 8.0033 11.2875 8.78651 11.2875C10.2081 11.2875 11.3007 9.78691 11.3007 7.62814C11.3007 5.71288 9.92514 4.3768 7.95722 4.3768C5.67997 4.3768 4.34389 6.08144 4.34389 7.84533C4.34389 8.52982 4.60715 9.26696 4.93624 9.66845C5.00206 9.74742 5.00864 9.81982 4.9889 9.8988C4.92966 10.1489 4.79144 10.6952 4.76512 10.8071C4.73221 10.9519 4.64664 10.9848 4.49526 10.9124C3.50802 10.4385 2.88934 8.97738 2.88934 7.80584C2.88934 5.28507 4.71904 2.96832 8.17442 2.96832C10.9453 2.96832 13.1041 4.94282 13.1041 7.58864C13.1041 10.3464 11.3665 12.5644 8.95763 12.5644C8.14808 12.5644 7.38461 12.1432 7.12794 11.6429C7.12794 11.6429 6.72645 13.1699 6.62773 13.545C6.45002 14.2427 5.96298 15.1115 5.63389 15.6446C6.38421 15.8749 7.174 16 8.0033 16C12.4196 16 16 12.4196 16 8.0033C15.9934 3.58042 12.413 0 7.9967 0Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_53130_7109">
+                          <rect width="16" height="16" rx="6" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.6704 4.15278C15.4859 3.46744 14.9456 2.92708 14.2602 2.74257C13.0082 2.3999 7.99997 2.3999 7.99997 2.3999C7.99997 2.3999 2.99175 2.3999 1.7397 2.72939C1.06754 2.9139 0.514001 3.46744 0.329488 4.15278C0 5.40483 0 8.0012 0 8.0012C0 8.0012 0 10.6107 0.329488 11.8496C0.514001 12.5349 1.05436 13.0753 1.7397 13.2598C3.00493 13.6025 7.99997 13.6025 7.99997 13.6025C7.99997 13.6025 13.0082 13.6025 14.2602 13.273C14.9456 13.0885 15.4859 12.5481 15.6704 11.8628C15.9999 10.6107 15.9999 8.01438 15.9999 8.01438C15.9999 8.01438 16.0131 5.40483 15.6704 4.15278Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M6.40527 10.3999L10.57 8.00121L6.40527 5.60254V10.3999Z"
+                        fill="#6750A4"
+                      />
+                    </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_53130_7111)">
+                        <path
+                          d="M0 2.13446C0 1.61965 0.180185 1.19494 0.540541 0.860329C0.900896 0.525703 1.36937 0.358398 1.94595 0.358398C2.51223 0.358398 2.97039 0.523124 3.32046 0.852607C3.68082 1.19238 3.861 1.63509 3.861 2.18079C3.861 2.675 3.68598 3.08683 3.33591 3.41631C2.97555 3.75608 2.50193 3.92597 1.91506 3.92597H1.89961C1.33333 3.92597 0.875166 3.75608 0.525097 3.41631C0.175027 3.07655 0 2.64926 0 2.13446ZM0.200772 15.648V5.33137H3.62934V15.648H0.200772ZM5.52896 15.648H8.95753V9.88736C8.95753 9.52699 8.99872 9.24899 9.08108 9.05338C9.22522 8.70331 9.44401 8.40729 9.73745 8.16535C10.0309 7.92339 10.399 7.80241 10.8417 7.80241C11.9949 7.80241 12.5714 8.57976 12.5714 10.1345V15.648H16V9.73291C16 8.2091 15.6396 7.05338 14.9189 6.26573C14.1982 5.47809 13.2458 5.08427 12.0618 5.08427C10.7336 5.08427 9.69884 5.6557 8.95753 6.79855V6.82944H8.94209L8.95753 6.79855V5.33137H5.52896C5.54954 5.66084 5.55985 6.68529 5.55985 8.40473C5.55985 10.1242 5.54954 12.5386 5.52896 15.648Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_53130_7111">
+                          <rect width="16" height="16" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_53130_7112)">
+                        <path
+                          d="M0 16L1.13085 11.8935C0.431709 10.6882 0.0649474 9.3232 0.0687679 7.92776C0.0687679 3.55513 3.6447 0 8.03438 0C10.1662 0 12.1681 0.825095 13.6695 2.32319C15.1748 3.82129 16.0038 5.81369 16 7.93156C16 12.3042 12.4241 15.8593 8.03056 15.8593H8.02674C6.6934 15.8593 5.383 15.5247 4.21776 14.8935L0 16ZM4.42024 13.4601L4.66093 13.6046C5.67717 14.2053 6.8424 14.5209 8.03056 14.5247H8.03438C11.6829 14.5247 14.6552 11.5703 14.6552 7.93536C14.6552 6.17491 13.9675 4.52091 12.7182 3.27376C11.469 2.02662 9.80324 1.34221 8.03438 1.34221C4.38586 1.3384 1.41356 4.29278 1.41356 7.92776C1.41356 9.1711 1.76122 10.384 2.42598 11.4335L2.58261 11.6844L1.91404 14.1141L4.42024 13.4601Z"
+                          fill="#6750A4"
+                        />
+                        <path
+                          d="M0.278809 15.7222L1.37145 11.7564C0.695236 10.5967 0.339936 9.27735 0.339936 7.93134C0.343756 3.7108 3.79361 0.277344 8.03429 0.277344C10.0935 0.277344 12.0228 1.07582 13.4746 2.52069C14.9264 3.96556 15.7248 5.88951 15.7248 7.93514C15.7248 12.1557 12.2712 15.5891 8.03429 15.5891H8.03047C6.74299 15.5891 5.47842 15.2659 4.35521 14.6576L0.278809 15.7222Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M0 16L1.13085 11.8935C0.431709 10.6882 0.0649474 9.3232 0.0687679 7.92776C0.0687679 3.55513 3.6447 0 8.03438 0C10.1662 0 12.1681 0.825095 13.6695 2.32319C15.1748 3.82129 16.0038 5.81369 16 7.93156C16 12.3042 12.4241 15.8593 8.03056 15.8593H8.02674C6.6934 15.8593 5.383 15.5247 4.21776 14.8935L0 16ZM4.42024 13.4601L4.66093 13.6046C5.67717 14.2053 6.8424 14.5209 8.03056 14.5247H8.03438C11.6829 14.5247 14.6552 11.5703 14.6552 7.93536C14.6552 6.17491 13.9675 4.52091 12.7182 3.27376C11.469 2.02662 9.80324 1.34221 8.03438 1.34221C4.38586 1.3384 1.41356 4.29278 1.41356 7.92776C1.41356 9.1711 1.76122 10.384 2.42598 11.4335L2.58261 11.6844L1.91404 14.1141L4.42024 13.4601Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.04392 4.61212C5.89492 4.28132 5.73829 4.27372 5.59693 4.26992C5.48232 4.26611 5.3486 4.26611 5.21489 4.26611C5.08117 4.26611 4.86723 4.31554 4.68384 4.51326C4.50046 4.71098 3.98853 5.19007 3.98853 6.16725C3.98853 7.14064 4.70295 8.0836 4.80228 8.21668C4.90161 8.34976 6.18146 10.4144 8.20247 11.2091C9.88346 11.8707 10.2273 11.7376 10.5902 11.7034C10.9532 11.6692 11.7669 11.2243 11.935 10.7604C12.0993 10.2965 12.0993 9.9011 12.0496 9.81745C12 9.7338 11.8663 9.68437 11.6676 9.58551C11.4689 9.48665 10.4909 9.00756 10.3075 8.93912C10.1241 8.87448 9.99043 8.84026 9.86054 9.03798C9.72682 9.2357 9.34478 9.68056 9.23017 9.81364C9.11555 9.94672 8.99712 9.96193 8.79846 9.86307C8.59979 9.76421 7.95796 9.55509 7.19769 8.87828C6.60552 8.35357 6.20438 7.70338 6.08977 7.50566C5.97515 7.30794 6.0783 7.20148 6.17764 7.10262C6.26551 7.01516 6.3763 6.87068 6.47563 6.75661C6.57496 6.64254 6.60934 6.55889 6.67429 6.42581C6.73924 6.29273 6.70868 6.17866 6.65901 6.0798C6.60935 5.98474 6.21966 5.00376 6.04392 4.61212Z"
+                          fill="#6750A4"
+                        />
+                      </g>
+                      <defs>
+                        <clippath id="clip0_53130_7112">
+                          <rect width="16" height="16" rx="6" fill="white" />
+                        </clippath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    `;
+      }
+    }
+
+    customElements.define("my-footer", Footer);
+  </script>
+
+  <script type="module" src="../../components/masonryDisplay.js"></script>
+</html>

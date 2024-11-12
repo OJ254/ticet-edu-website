@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      #sticky-menu {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+      }
+    </style>
+    <script>
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <script src="/src/script.js" defer></script>
+    <title>Ticet EDU - Who We Are</title>
+    <link rel="icon" type="image/svg" href="/public/favicon.ico" />
+
+    <script
+      src="/src/components/navbar.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script
+      src="/src/components/footer.js"
+      type="text/javascript"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <!-- start of header -->
+    <div>
+      <nav-bar></nav-bar>
+    </div>
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <div class="flex flex-col items-center w-full mt-20 my-8">
+      <div class="flex justify-center w-full surface-primary">
+        <div class="max-w-8xl flex gap-4 flex-col py-10 px-4">
+          <div class="flex gap-4 flex-col lg:flex-row w-full py-8 md:py-12">
+            <div class="w-full lg:min-w-72 xl:min-w-80 2xl:min-w-96">
+              <h5 class="text-app-colors-heading-d w-full">Who we are</h5>
+              <h4
+                class="text-secondary-yellow-500 dark:text-secondary-yellow-500"
+              >
+                Public Position
+              </h4>
+            </div>
+
+            <p
+              class="text-justify small text-app-colors-heading-d dark:text-app-colors-heading-d"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+              ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex max-w-8xl justify-center mt-10 px-4"></div>
+    </div>
+    <!-- end of main -->
+
+    <!-- start of footer -->
+    <div>
+      <my-footer></my-footer>
+    </div>
+    <!-- end of footer -->
+  </body>
+</html>
